@@ -1,0 +1,5 @@
+<svg width="140" height="32" viewBox="0 0 140 32" xmlns="http://www.w3.org/2000/svg">
+  <rect x="2" y="5" width="24" height="19" rx="4" fill="none" stroke="#1B1F2A" stroke-width="2.2"/>
+  <path d="M10.5 11L17.5 18M17.5 11L10.5 18" stroke="#B14E20" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="34" y="22" font-family="Newsreader, Georgia, serif" font-weight="600" font-size="19" fill="#1B1F2A">tab-<tspan fill="#B14E20">zero</tspan></text>
+</svg>
