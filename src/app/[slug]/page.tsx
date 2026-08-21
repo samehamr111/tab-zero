@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Logo } from "@/components/Logo";
 import { SiteFooter } from "@/components/SiteFooter";
+import { AffiliateCta } from "@/components/AffiliateCta";
 import { getAllProducts, getProductBySlug } from "@/lib/products";
 
 export const dynamicParams = false;
@@ -88,11 +89,11 @@ export default async function ProductPage({
               <h1>{product.hero.h1}</h1>
               <p className="sub">{product.hero.sub}</p>
               <div className="cta-row">
-                <a
+                <AffiliateCta
                   className="btn btn-primary"
                   href={product.affiliateUrl ?? "#"}
-                  data-affiliate-link={product.affiliateLinkKey}
-                  {...(product.affiliateUrl ? { target: "_blank", rel: "sponsored noopener noreferrer" } : {})}
+                  external={Boolean(product.affiliateUrl)}
+                  contentName={product.slug}
                 >
                   <span>
                     {product.ctaLabel ?? (
@@ -101,7 +102,7 @@ export default async function ProductPage({
                       </>
                     )}
                   </span>
-                </a>
+                </AffiliateCta>
                 <a className="btn btn-ghost" href="#how">
                   See how it works
                 </a>
@@ -301,11 +302,11 @@ export default async function ProductPage({
           <div className="wrap final-cta-inner">
             <h2>{product.finalCta.h2}</h2>
             <p>{product.finalCta.body}</p>
-            <a
+            <AffiliateCta
               className="btn btn-primary btn-lg"
               href={product.affiliateUrl ?? "#"}
-              data-affiliate-link={product.affiliateLinkKey}
-              {...(product.affiliateUrl ? { target: "_blank", rel: "sponsored noopener noreferrer" } : {})}
+              external={Boolean(product.affiliateUrl)}
+              contentName={product.slug}
             >
               <span>
                 {product.ctaLabel ?? (
@@ -314,7 +315,7 @@ export default async function ProductPage({
                   </>
                 )}
               </span>
-            </a>
+            </AffiliateCta>
             <p className="micro-note">{product.finalCta.note}</p>
           </div>
         </section>

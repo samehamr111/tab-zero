@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Newsreader, Public_Sans, JetBrains_Mono } from "next/font/google";
+import { MetaPixel } from "@/components/MetaPixel";
 import "./globals.css";
 
 const newsreader = Newsreader({
@@ -50,7 +51,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${newsreader.variable} ${publicSans.variable} ${jetbrainsMono.variable}`}>
-      <body>{children}</body>
+      <body>
+        <MetaPixel />
+        {children}
+      </body>
     </html>
   );
 }
