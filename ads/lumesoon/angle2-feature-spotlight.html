@@ -1,0 +1,93 @@
+<!doctype html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Public+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+  *{box-sizing:border-box; margin:0; padding:0;}
+  .canvas{
+    width:1080px; height:1080px;
+    background:#1B1F2A;
+    font-family:"Public Sans",sans-serif;
+    display:flex; flex-direction:column;
+    padding:56px 64px 48px;
+    color:#ECEEF3;
+  }
+  .eyebrow{
+    font-family:"JetBrains Mono",monospace;
+    font-size:18px; letter-spacing:.08em; text-transform:uppercase;
+    color:#4FBFA0; margin-bottom:10px; font-weight:600; text-align:center;
+  }
+  h1{
+    font-family:"Fraunces",serif; font-weight:700;
+    font-size:38px; line-height:1.15; color:#FFFFFF;
+    text-align:center;
+  }
+  .hub-wrap{position:relative; flex:1; margin-top:20px;}
+  .hub{
+    position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+    width:220px; height:220px; border-radius:50%;
+    background:#F0824B; color:#1B1109;
+    display:flex; align-items:center; justify-content:center; text-align:center;
+    font-family:"Fraunces",serif; font-weight:700; font-size:28px; line-height:1.15;
+    box-shadow:0 0 0 16px rgba(240,130,75,0.12);
+  }
+  .spoke{
+    position:absolute; width:280px;
+    background:#252B38; border:1px solid #383F4C; border-radius:14px;
+    padding:18px 20px;
+  }
+  .spoke .label{font-weight:700; font-size:20px; color:#FFFFFF;}
+  .spoke .sub{font-size:14px; color:#9AA3B2; margin-top:4px;}
+  .s1{top:40px; left:40px;}
+  .s2{top:40px; right:40px;}
+  .s3{bottom:120px; left:40px;}
+  .s4{bottom:120px; right:40px;}
+  .footer{
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .logo{display:flex; align-items:center; gap:12px;}
+  .logo svg{width:38px; height:30px;}
+  .logo-text{font-family:"Fraunces",serif; font-weight:700; font-size:30px; color:#ECEEF3;}
+  .logo-text span{color:#F0824B;}
+  .cta{
+    background:#F0824B; color:#1B1109;
+    font-weight:700; font-size:28px;
+    padding:20px 44px; border-radius:100px;
+  }
+</style></head>
+<body>
+<div class="canvas">
+  <div class="eyebrow">One AI workspace</div>
+  <h1>Everything that goes into making content, in one place.</h1>
+
+  <div class="hub-wrap">
+    <div class="spoke s1">
+      <div class="label">Voice Cloning</div>
+      <div class="sub">Clone your own voice in minutes</div>
+    </div>
+    <div class="spoke s2">
+      <div class="label">Text-to-Speech</div>
+      <div class="sub">1,600+ voices, 63 languages</div>
+    </div>
+    <div class="spoke s3">
+      <div class="label">Scripts &amp; Blog Posts</div>
+      <div class="sub">AI writer for video and web</div>
+    </div>
+    <div class="spoke s4">
+      <div class="label">Transcription</div>
+      <div class="sub">Audio to searchable text</div>
+    </div>
+    <div class="hub">AI<br>Workspace</div>
+  </div>
+
+  <div class="footer">
+    <div class="logo">
+      <svg viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="1.2" width="24" height="18.8" rx="4" stroke="#ECEEF3" stroke-width="2.2"/>
+        <path d="M9.5 6.1L18.5 15.1M18.5 6.1L9.5 15.1" stroke="#F0824B" stroke-width="2.3" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">tab-<span>zero</span></span>
+    </div>
+    <div class="cta">See how it works</div>
+  </div>
+</div>
+</body></html>

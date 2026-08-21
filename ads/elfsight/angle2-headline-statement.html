@@ -1,0 +1,72 @@
+<!doctype html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&family=Public+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+  *{box-sizing:border-box; margin:0; padding:0;}
+  .canvas{
+    width:1080px; height:1080px;
+    background:#1B1F2A;
+    font-family:"Public Sans",sans-serif;
+    position:relative;
+    display:flex; flex-direction:column;
+    padding:64px 72px 56px;
+    overflow:hidden;
+  }
+  .bignum{
+    position:absolute; top:-60px; right:-40px;
+    font-family:"Fraunces",serif; font-weight:900; font-size:620px; line-height:1;
+    color:#252B38;
+    z-index:0;
+  }
+  .content{position:relative; z-index:1; display:flex; flex-direction:column; height:100%;}
+  .eyebrow{
+    font-family:"JetBrains Mono",monospace;
+    font-size:20px; letter-spacing:.08em; text-transform:uppercase;
+    color:#4FBFA0; margin-bottom:20px; font-weight:600;
+  }
+  h1{
+    font-family:"Fraunces",serif; font-weight:700;
+    font-size:64px; line-height:1.08; color:#FFFFFF;
+    max-width:760px;
+  }
+  .spacer{flex:1;}
+  .callout{
+    align-self:flex-start;
+    font-family:"JetBrains Mono",monospace; font-weight:600; font-size:24px;
+    background:#193029; color:#4FBFA0;
+    padding:14px 26px; border-radius:12px; margin-bottom:32px;
+  }
+  .footer{
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .logo{display:flex; align-items:center; gap:12px;}
+  .logo svg{width:38px; height:30px;}
+  .logo-text{font-family:"Fraunces",serif; font-weight:700; font-size:30px; color:#ECEEF3;}
+  .logo-text span{color:#F0824B;}
+  .cta{
+    background:#F0824B; color:#1B1109;
+    font-weight:700; font-size:28px;
+    padding:20px 44px; border-radius:100px;
+  }
+</style></head>
+<body>
+<div class="canvas">
+  <div class="bignum">97</div>
+  <div class="content">
+    <div class="eyebrow">No-code website widgets</div>
+    <h1>97 widgets. One embed code. Zero developers.</h1>
+    <div class="spacer"></div>
+    <div class="callout">Free to try · no credit card required</div>
+    <div class="footer">
+      <div class="logo">
+        <svg viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="1.2" width="24" height="18.8" rx="4" stroke="#ECEEF3" stroke-width="2.2"/>
+          <path d="M9.5 6.1L18.5 15.1M18.5 6.1L9.5 15.1" stroke="#F0824B" stroke-width="2.3" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-text">tab-<span>zero</span></span>
+      </div>
+      <div class="cta">See how it works</div>
+    </div>
+  </div>
+</div>
+</body></html>

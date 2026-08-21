@@ -1,0 +1,80 @@
+<!doctype html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Public+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+  *{box-sizing:border-box; margin:0; padding:0;}
+  .canvas{
+    width:1080px; height:1080px;
+    background:#F3F4F6;
+    font-family:"Public Sans",sans-serif;
+    display:flex; flex-direction:column;
+    padding:64px 72px 56px;
+  }
+  .eyebrow{
+    font-family:"JetBrains Mono",monospace;
+    font-size:20px; letter-spacing:.08em; text-transform:uppercase;
+    color:#1E6F5C; margin-bottom:14px; font-weight:600;
+  }
+  h1{
+    font-family:"Fraunces",serif; font-weight:700;
+    font-size:52px; line-height:1.12; color:#1B1F2A;
+    max-width:820px;
+  }
+  .press-label{
+    font-family:"JetBrains Mono",monospace; font-size:14px; letter-spacing:.1em; text-transform:uppercase;
+    color:#5B6472; margin:52px 0 20px;
+  }
+  .press-grid{display:flex; flex-direction:column; gap:14px;}
+  .press-item{
+    background:#FFFFFF; border:1px solid #E1E4EA; border-radius:14px;
+    padding:26px 30px; font-family:"Fraunces",serif; font-weight:700; font-size:34px; color:#1B1F2A;
+  }
+  .spacer{flex:1;}
+  .callout{
+    display:inline-flex; align-self:flex-start;
+    font-family:"JetBrains Mono",monospace; font-weight:600; font-size:24px;
+    background:#E1EFEA; color:#1E6F5C;
+    padding:14px 24px; border-radius:12px;
+  }
+  .footer{
+    display:flex; align-items:center; justify-content:space-between;
+    margin-top:28px;
+  }
+  .logo{display:flex; align-items:center; gap:12px;}
+  .logo svg{width:38px; height:30px;}
+  .logo-text{font-family:"Fraunces",serif; font-weight:700; font-size:30px; color:#1B1F2A;}
+  .logo-text span{color:#B14E20;}
+  .cta{
+    background:#B14E20; color:#FFFFFF;
+    font-weight:700; font-size:28px;
+    padding:20px 44px; border-radius:100px;
+  }
+</style></head>
+<body>
+<div class="canvas">
+  <div class="eyebrow">Funnel building, without the mess</div>
+  <h1>The funnel builder everyone keeps writing about.</h1>
+
+  <div class="press-label">As featured in</div>
+  <div class="press-grid">
+    <div class="press-item">Forbes</div>
+    <div class="press-item">USA Today</div>
+    <div class="press-item">Entrepreneur</div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="callout">1M+ funnels built · 4.8★ from 1,643 reviews</div>
+
+  <div class="footer">
+    <div class="logo">
+      <svg viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="1.2" width="24" height="18.8" rx="4" stroke="#1B1F2A" stroke-width="2.2"/>
+        <path d="M9.5 6.1L18.5 15.1M18.5 6.1L9.5 15.1" stroke="#B14E20" stroke-width="2.3" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">tab-<span>zero</span></span>
+    </div>
+    <div class="cta">See how it works</div>
+  </div>
+</div>
+</body></html>

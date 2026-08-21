@@ -1,0 +1,98 @@
+<!doctype html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Public+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+  *{box-sizing:border-box; margin:0; padding:0;}
+  .canvas{
+    width:1080px; height:1080px;
+    background:#F3F4F6;
+    font-family:"Public Sans",sans-serif;
+    display:flex; flex-direction:column;
+    padding:60px 68px 48px;
+  }
+  .eyebrow{
+    font-family:"JetBrains Mono",monospace;
+    font-size:18px; letter-spacing:.08em; text-transform:uppercase;
+    color:#1E6F5C; margin-bottom:10px; font-weight:600;
+  }
+  h1{
+    font-family:"Fraunces",serif; font-weight:700;
+    font-size:38px; line-height:1.15; color:#1B1F2A;
+    max-width:900px; margin-bottom:34px;
+  }
+  .stack{display:flex; flex-direction:column; gap:16px; flex:1;}
+  .card{
+    display:flex; gap:18px; align-items:flex-start;
+    background:#FFFFFF; border:1px solid #E1E4EA; border-radius:14px;
+    padding:22px 24px;
+  }
+  .avatar{
+    width:52px; height:52px; border-radius:50%; flex:none;
+    display:flex; align-items:center; justify-content:center;
+    font-family:"Fraunces",serif; font-weight:700; font-size:22px; color:#FFFFFF;
+    background:#1E6F5C;
+  }
+  .card:nth-child(2) .avatar{background:#B14E20;}
+  .card:nth-child(3) .avatar{background:#5B6472;}
+  .quote{font-size:19px; color:#1B1F2A; line-height:1.4;}
+  .who{margin-top:10px; font-size:14px; color:#5B6472;}
+  .who strong{color:#1B1F2A;}
+  .stars{color:#B14E20; font-size:14px; margin-bottom:6px;}
+  .footer{
+    display:flex; align-items:center; justify-content:space-between;
+    margin-top:20px;
+  }
+  .logo{display:flex; align-items:center; gap:12px;}
+  .logo svg{width:38px; height:30px;}
+  .logo-text{font-family:"Fraunces",serif; font-weight:700; font-size:30px; color:#1B1F2A;}
+  .logo-text span{color:#B14E20;}
+  .cta{
+    background:#B14E20; color:#FFFFFF;
+    font-weight:700; font-size:28px;
+    padding:20px 44px; border-radius:100px;
+  }
+</style></head>
+<body>
+<div class="canvas">
+  <div class="eyebrow">Rated 4.9/5 by 50,000+ creators</div>
+  <h1>What people actually say after switching.</h1>
+
+  <div class="stack">
+    <div class="card">
+      <div class="avatar">C</div>
+      <div>
+        <div class="stars">★★★★★</div>
+        <div class="quote">&ldquo;It sounds exactly like me and saves me hours of recording time.&rdquo;</div>
+        <div class="who"><strong>Chinedu O.</strong> — YouTube Creator, Nigeria</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="avatar">S</div>
+      <div>
+        <div class="stars">★★★★★</div>
+        <div class="quote">&ldquo;The voices sound completely natural and expressive.&rdquo;</div>
+        <div class="who"><strong>Sarah M.</strong> — Content Marketing, USA</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="avatar">P</div>
+      <div>
+        <div class="stars">★★★★★</div>
+        <div class="quote">&ldquo;Being able to clone voices and use premium text-to-speech is a game changer.&rdquo;</div>
+        <div class="who"><strong>Priya P.</strong> — Podcast Creator, India</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="logo">
+      <svg viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="1.2" width="24" height="18.8" rx="4" stroke="#1B1F2A" stroke-width="2.2"/>
+        <path d="M9.5 6.1L18.5 15.1M18.5 6.1L9.5 15.1" stroke="#B14E20" stroke-width="2.3" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">tab-<span>zero</span></span>
+    </div>
+    <div class="cta">See how it works</div>
+  </div>
+</div>
+</body></html>

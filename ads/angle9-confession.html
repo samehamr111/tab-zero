@@ -1,0 +1,65 @@
+<!doctype html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+  *{box-sizing:border-box; margin:0; padding:0;}
+  .canvas{width:1080px; height:1080px; background:#F3F4F6; font-family:"Public Sans",sans-serif; display:flex; flex-direction:column; padding:80px 96px 0;}
+  .eyebrow{font-family:"JetBrains Mono",monospace; font-size:16px; letter-spacing:.1em; text-transform:uppercase; color:#8A9186; margin-bottom:18px; font-weight:500;}
+  h1{font-family:"Fraunces",serif; font-weight:500; font-size:42px; line-height:1.3; color:#1B1F2A; max-width:760px;}
+  .diagram{position:relative; width:700px; height:640px; margin:24px auto 0;}
+  .center{
+    position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+    width:150px; height:150px; border-radius:50%;
+    background:#FFFFFF; border:1.5px solid #D8DBE0;
+    display:flex; align-items:center; justify-content:center;
+    font-family:"Fraunces",serif; font-weight:500; font-size:22px; color:#1B1F2A;
+    text-align:center;
+  }
+  .callout{position:absolute; width:210px; font-size:19px; color:#5B6472; text-align:center; font-family:"JetBrains Mono",monospace; font-size:17px;}
+  .callout.top{left:50%; top:0; transform:translateX(-50%);}
+  .callout.right{left:490px; top:50%; transform:translateY(-50%); text-align:left;}
+  .callout.bottom{left:50%; bottom:0; transform:translateX(-50%);}
+  .callout.left{left:0; top:50%; transform:translateY(-50%); text-align:right;}
+  .line{position:absolute; background:#D8DBE0;}
+  .line.top{left:350px; top:44px; width:1px; height:196px;}
+  .line.bottom{left:350px; top:400px; width:1px; height:196px;}
+  .line.left{left:210px; top:320px; width:105px; height:1px;}
+  .line.right{left:385px; top:320px; width:105px; height:1px;}
+  .spacer{flex:1;}
+  .footer{display:flex; align-items:center; justify-content:space-between; padding:0 0 60px;}
+  .logo{display:flex; align-items:center; gap:12px;} .logo svg{width:34px; height:27px;}
+  .logo-text{font-family:"Fraunces",serif; font-weight:500; font-size:26px; color:#1B1F2A;} .logo-text span{color:#B14E20;}
+  .cta{display:flex; align-items:center; gap:10px; font-size:22px; font-weight:600; color:#1B1F2A; border-bottom:2px solid #B14E20; padding-bottom:4px;}
+  .cta .arrow{color:#B14E20; font-size:22px;}
+</style></head>
+<body>
+<div class="canvas">
+  <div class="eyebrow">tab-zero</div>
+  <h1>I didn't know what "crawl budget" meant either. You don't have to.</h1>
+
+  <div class="diagram">
+    <div class="line top"></div>
+    <div class="line bottom"></div>
+    <div class="line left"></div>
+    <div class="line right"></div>
+    <div class="callout top">Keyword<br>research</div>
+    <div class="callout right">Competitor<br>gaps</div>
+    <div class="callout bottom">Site<br>health</div>
+    <div class="callout left">What to<br>fix first</div>
+    <div class="center">Semrush</div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="footer">
+    <div class="logo">
+      <svg viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="1.2" width="24" height="18.8" rx="4" stroke="#1B1F2A" stroke-width="1.8"/>
+        <path d="M9.5 6.1L18.5 15.1M18.5 6.1L9.5 15.1" stroke="#B14E20" stroke-width="1.9" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">tab-<span>zero</span></span>
+    </div>
+    <div class="cta">Start free trial <span class="arrow">→</span></div>
+  </div>
+</div>
+</body></html>

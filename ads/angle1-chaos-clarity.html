@@ -1,0 +1,114 @@
+<!doctype html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Public+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+  *{box-sizing:border-box; margin:0; padding:0;}
+  .canvas{
+    width:1080px; height:1080px;
+    background:#F3F4F6;
+    font-family:"Public Sans",sans-serif;
+    position:relative;
+    display:flex; flex-direction:column;
+    padding:64px 72px 56px;
+  }
+  .eyebrow{
+    font-family:"JetBrains Mono",monospace;
+    font-size:20px; letter-spacing:.08em; text-transform:uppercase;
+    color:#1E6F5C; margin-bottom:14px; font-weight:600;
+  }
+  h1{
+    font-family:"Fraunces",serif; font-weight:700;
+    font-size:56px; line-height:1.08; color:#1B1F2A;
+    max-width:900px;
+  }
+  .body{
+    flex:1;
+    display:grid;
+    grid-template-columns:1.05fr auto 1fr;
+    align-items:center;
+    gap:36px;
+    margin-top:44px;
+  }
+  .chaos{position:relative; height:520px;}
+  .chip{
+    position:absolute;
+    background:#EBEDF1;
+    border:2px dashed #C7CBD4;
+    border-radius:14px;
+    padding:16px 26px;
+    font-size:26px; font-weight:600; color:#1B1F2A;
+    white-space:nowrap;
+  }
+  .chip:nth-child(1){top:0; left:40px; transform:rotate(-5deg);}
+  .chip:nth-child(2){top:100px; left:130px; transform:rotate(4deg);}
+  .chip:nth-child(3){top:200px; left:20px; transform:rotate(-3deg);}
+  .chip:nth-child(4){top:300px; left:150px; transform:rotate(5deg);}
+  .chip:nth-child(5){top:390px; left:60px; transform:rotate(-4deg);}
+  .chip:nth-child(6){top:460px; left:180px; transform:rotate(2deg);}
+  .arrow{font-size:64px; color:#B14E20; font-weight:700;}
+  .clarity{
+    background:#E1EFEA;
+    border-radius:24px;
+    padding:56px 44px;
+    text-align:center;
+  }
+  .clarity .label{
+    font-family:"Fraunces",serif; font-weight:700;
+    font-size:44px; color:#B14E20; line-height:1.15;
+    margin-bottom:28px;
+  }
+  .bars{display:flex; align-items:flex-end; justify-content:center; gap:10px; height:90px;}
+  .bar{width:22px; background:#1E6F5C; border-radius:4px 4px 0 0;}
+  .footer{
+    display:flex; align-items:center; justify-content:space-between;
+    margin-top:40px;
+  }
+  .logo{display:flex; align-items:center; gap:12px;}
+  .logo svg{width:38px; height:30px;}
+  .logo-text{font-family:"Fraunces",serif; font-weight:700; font-size:30px; color:#1B1F2A;}
+  .logo-text span{color:#B14E20;}
+  .cta{
+    background:#B14E20; color:#FFFFFF;
+    font-weight:700; font-size:28px;
+    padding:20px 44px; border-radius:100px;
+  }
+</style></head>
+<body>
+<div class="canvas">
+  <div class="eyebrow">SEO tooling, without the tab overload</div>
+  <h1>Stop guessing why you're not ranking.</h1>
+
+  <div class="body">
+    <div class="chaos">
+      <div class="chip">Keyword Tool</div>
+      <div class="chip">Rank Checker</div>
+      <div class="chip">Competitor Spy</div>
+      <div class="chip">Site Audit</div>
+      <div class="chip">Spreadsheet</div>
+      <div class="chip">Sticky Notes</div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="clarity">
+      <div class="label">One<br>Dashboard</div>
+      <div class="bars">
+        <div class="bar" style="height:22px"></div>
+        <div class="bar" style="height:34px"></div>
+        <div class="bar" style="height:46px"></div>
+        <div class="bar" style="height:62px"></div>
+        <div class="bar" style="height:80px"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="logo">
+      <svg viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="1.2" width="24" height="18.8" rx="4" stroke="#1B1F2A" stroke-width="2.2"/>
+        <path d="M9.5 6.1L18.5 15.1M18.5 6.1L9.5 15.1" stroke="#B14E20" stroke-width="2.3" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">tab-<span>zero</span></span>
+    </div>
+    <div class="cta">Start Free Trial</div>
+  </div>
+</div>
+</body></html>

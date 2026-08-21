@@ -1,0 +1,74 @@
+<!doctype html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Public+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+  *{box-sizing:border-box; margin:0; padding:0;}
+  .canvas{
+    width:1080px; height:1080px;
+    background:#F3F4F6;
+    font-family:"Public Sans",sans-serif;
+    display:flex; flex-direction:column;
+    padding:64px 64px 56px;
+  }
+  .eyebrow{
+    font-family:"JetBrains Mono",monospace;
+    font-size:20px; letter-spacing:.08em; text-transform:uppercase;
+    color:#1E6F5C; margin-bottom:14px; font-weight:600;
+  }
+  h1{
+    font-family:"Fraunces",serif; font-weight:700;
+    font-size:46px; line-height:1.14; color:#1B1F2A;
+    max-width:900px; margin-bottom:8px;
+  }
+  .strip{flex:1; display:flex; flex-direction:column; justify-content:center; gap:0;}
+  .step{display:flex; align-items:center; gap:26px;}
+  .num{
+    width:56px; height:56px; border-radius:50%; flex:none;
+    background:#1B1F2A; color:#fff;
+    display:flex; align-items:center; justify-content:center;
+    font-family:"JetBrains Mono",monospace; font-weight:600; font-size:22px;
+  }
+  .step:last-child .num{background:#1E6F5C;}
+  .step-label{font-family:"Fraunces",serif; font-weight:700; font-size:30px; color:#1B1F2A;}
+  .connector{width:2px; height:36px; background:#D8DBE0; margin-left:27px;}
+  .footer{
+    display:flex; align-items:center; justify-content:space-between;
+    margin-top:24px;
+  }
+  .logo{display:flex; align-items:center; gap:12px;}
+  .logo svg{width:38px; height:30px;}
+  .logo-text{font-family:"Fraunces",serif; font-weight:700; font-size:30px; color:#1B1F2A;}
+  .logo-text span{color:#B14E20;}
+  .cta{
+    background:#B14E20; color:#FFFFFF;
+    font-weight:700; font-size:28px;
+    padding:20px 44px; border-radius:100px;
+  }
+</style></head>
+<body>
+<div class="canvas">
+  <div class="eyebrow">No credit card required</div>
+  <h1>4 steps to a properly redacted file.</h1>
+
+  <div class="strip">
+    <div class="step"><div class="num">1</div><div class="step-label">Upload your document</div></div>
+    <div class="connector"></div>
+    <div class="step"><div class="num">2</div><div class="step-label">AI finds the sensitive data</div></div>
+    <div class="connector"></div>
+    <div class="step"><div class="num">3</div><div class="step-label">Approve the redactions</div></div>
+    <div class="connector"></div>
+    <div class="step"><div class="num">4</div><div class="step-label">Download, secured</div></div>
+  </div>
+
+  <div class="footer">
+    <div class="logo">
+      <svg viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="1.2" width="24" height="18.8" rx="4" stroke="#1B1F2A" stroke-width="2.2"/>
+        <path d="M9.5 6.1L18.5 15.1M18.5 6.1L9.5 15.1" stroke="#B14E20" stroke-width="2.3" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">tab-<span>zero</span></span>
+    </div>
+    <div class="cta">See how it works</div>
+  </div>
+</div>
+</body></html>

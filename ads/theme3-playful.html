@@ -1,0 +1,58 @@
+<!doctype html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@600&display=swap">
+<style>
+  *{box-sizing:border-box; margin:0; padding:0;}
+  .canvas{width:1080px; height:1080px; background:#FFF7ED; font-family:"Public Sans",sans-serif; display:flex; flex-direction:column; padding:88px; position:relative; overflow:hidden;}
+  .blob{position:absolute; border-radius:50%; opacity:.5;}
+  .blob1{width:340px; height:340px; background:#FED7AA; top:-140px; right:-120px;}
+  .blob2{width:220px; height:220px; background:#BFDBFE; bottom:-90px; left:-80px; opacity:.6;}
+  .eyebrow{
+    font-family:"JetBrains Mono",monospace; font-size:15px; letter-spacing:.06em; text-transform:uppercase;
+    color:#2563EB; background:#DBEAFE; display:inline-block; padding:8px 16px; border-radius:100px;
+    margin-bottom:32px; font-weight:600; position:relative; z-index:1;
+  }
+  .bubble{
+    background:#FFFFFF; border-radius:28px; padding:52px 56px;
+    max-width:760px; position:relative; z-index:1;
+    box-shadow:0 24px 50px -20px rgba(154,52,18,.18);
+  }
+  .bubble::after{
+    content:""; position:absolute; left:64px; bottom:-22px;
+    width:0; height:0;
+    border-left:16px solid transparent; border-right:16px solid transparent;
+    border-top:24px solid #FFFFFF;
+  }
+  h1{font-family:"Public Sans",sans-serif; font-weight:800; font-size:52px; line-height:1.22; color:#9A3412;}
+  .sub{font-size:22px; line-height:1.6; color:#475569; max-width:600px; margin-top:44px; position:relative; z-index:1;}
+  .spacer{flex:1;}
+  .footer{display:flex; align-items:center; justify-content:space-between; position:relative; z-index:1;}
+  .logo{display:flex; align-items:center; gap:12px;} .logo svg{width:34px; height:27px;}
+  .logo-text{font-family:"Public Sans",sans-serif; font-weight:800; font-size:25px; color:#9A3412;} .logo-text span{color:#2563EB;}
+  .cta{background:#2563EB; color:#FFFFFF; font-weight:700; font-size:22px; padding:18px 38px; border-radius:100px;}
+</style></head>
+<body>
+<div class="canvas">
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+
+  <div class="eyebrow">tab-zero</div>
+  <div class="bubble">
+    <h1>Your blog isn't cursed. It's just missing one dashboard.</h1>
+  </div>
+  <p class="sub">Semrush pulls keyword research, site health, and competitor moves into one place — so you stop guessing and start fixing.</p>
+
+  <div class="spacer"></div>
+
+  <div class="footer">
+    <div class="logo">
+      <svg viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="1.2" width="24" height="18.8" rx="4" stroke="#9A3412" stroke-width="2.1"/>
+        <path d="M9.5 6.1L18.5 15.1M18.5 6.1L9.5 15.1" stroke="#2563EB" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">tab-<span>zero</span></span>
+    </div>
+    <div class="cta">Start free trial →</div>
+  </div>
+</div>
+</body></html>

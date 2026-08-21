@@ -1,0 +1,71 @@
+<!doctype html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Public+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+  *{box-sizing:border-box; margin:0; padding:0;}
+  .canvas{
+    width:1080px; height:1080px;
+    background:#1B1F2A;
+    font-family:"Public Sans",sans-serif;
+    display:flex; flex-direction:column;
+    padding:72px 80px 56px;
+    color:#ECEEF3;
+  }
+  .eyebrow{
+    font-family:"JetBrains Mono",monospace;
+    font-size:20px; letter-spacing:.08em; text-transform:uppercase;
+    color:#4FBFA0; margin-bottom:30px; font-weight:600;
+  }
+  .stat{
+    font-family:"Fraunces",serif; font-weight:700;
+    font-size:170px; line-height:1; color:#FFFFFF;
+  }
+  .stat span{color:#F0824B;}
+  p.line{
+    font-size:28px; line-height:1.5; color:#9AA3B2; max-width:760px;
+    margin-top:26px;
+  }
+  .spacer{flex:1;}
+  .rating{display:flex; align-items:center; gap:16px; margin-bottom:40px;}
+  .rating .score{font-family:"Fraunces",serif; font-weight:700; font-size:56px; color:#FFFFFF;}
+  .rating .stars{color:#F0824B; font-size:26px; letter-spacing:.05em;}
+  .rating .count{font-family:"JetBrains Mono",monospace; font-size:18px; color:#9AA3B2;}
+  .footer{
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .logo{display:flex; align-items:center; gap:12px;}
+  .logo svg{width:38px; height:30px;}
+  .logo-text{font-family:"Fraunces",serif; font-weight:700; font-size:30px; color:#ECEEF3;}
+  .logo-text span{color:#F0824B;}
+  .cta{
+    background:#F0824B; color:#1B1109;
+    font-weight:700; font-size:28px;
+    padding:20px 44px; border-radius:100px;
+  }
+</style></head>
+<body>
+<div class="canvas">
+  <div class="eyebrow">Funnel building, without the mess</div>
+  <div class="stat">1M<span>+</span></div>
+  <p class="line">funnels built by 100,000+ users on one tool — page, checkout, and follow-up included.</p>
+
+  <div class="spacer"></div>
+
+  <div class="rating">
+    <span class="score">4.8</span>
+    <span class="stars">★★★★★</span>
+    <span class="count">1,643 reviews</span>
+  </div>
+
+  <div class="footer">
+    <div class="logo">
+      <svg viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="1.2" width="24" height="18.8" rx="4" stroke="#ECEEF3" stroke-width="2.2"/>
+        <path d="M9.5 6.1L18.5 15.1M18.5 6.1L9.5 15.1" stroke="#F0824B" stroke-width="2.3" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">tab-<span>zero</span></span>
+    </div>
+    <div class="cta">See how it works</div>
+  </div>
+</div>
+</body></html>

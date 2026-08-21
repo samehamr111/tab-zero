@@ -1,0 +1,97 @@
+<!doctype html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Public+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+  *{box-sizing:border-box; margin:0; padding:0;}
+  .canvas{
+    width:1080px; height:1080px;
+    background:#1B1F2A;
+    font-family:"Public Sans",sans-serif;
+    display:flex; flex-direction:column;
+    padding:64px 72px 56px;
+    color:#ECEEF3;
+  }
+  .eyebrow{
+    font-family:"JetBrains Mono",monospace;
+    font-size:20px; letter-spacing:.08em; text-transform:uppercase;
+    color:#4FBFA0; margin-bottom:14px; font-weight:600;
+  }
+  h1{
+    font-family:"Fraunces",serif; font-weight:700;
+    font-size:50px; line-height:1.12; color:#FFFFFF;
+    max-width:820px;
+  }
+  .badges{display:flex; gap:24px; margin-top:52px;}
+  .badge{
+    flex:1; background:#252B38; border:1px solid #383F4C; border-radius:16px;
+    padding:36px 28px; text-align:center;
+  }
+  .shield{
+    width:64px; height:64px; margin:0 auto 20px; border-radius:16px;
+    background:#193029; display:flex; align-items:center; justify-content:center;
+  }
+  .badge-title{font-family:"Fraunces",serif; font-weight:700; font-size:24px; color:#FFFFFF; margin-bottom:8px;}
+  .badge-sub{font-size:14px; color:#9AA3B2; line-height:1.5;}
+  .spacer{flex:1;}
+  .use-row{display:flex; gap:12px; flex-wrap:wrap; margin-bottom:32px;}
+  .use-tag{
+    font-family:"JetBrains Mono",monospace; font-size:14px; color:#9AA3B2;
+    border:1px solid #383F4C; padding:8px 16px; border-radius:100px;
+  }
+  .footer{
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .logo{display:flex; align-items:center; gap:12px;}
+  .logo svg{width:38px; height:30px;}
+  .logo-text{font-family:"Fraunces",serif; font-weight:700; font-size:30px; color:#ECEEF3;}
+  .logo-text span{color:#F0824B;}
+  .cta{
+    background:#F0824B; color:#1B1109;
+    font-weight:700; font-size:28px;
+    padding:20px 44px; border-radius:100px;
+  }
+</style></head>
+<body>
+<div class="canvas">
+  <div class="eyebrow">Built for the documents you can't get wrong</div>
+  <h1>Redaction certified for legal, healthcare, and government work.</h1>
+
+  <div class="badges">
+    <div class="badge">
+      <div class="shield">
+        <svg width="30" height="34" viewBox="0 0 30 34" fill="none"><path d="M15 2L28 7V16C28 24 22 30 15 32C8 30 2 24 2 16V7L15 2Z" stroke="#4FBFA0" stroke-width="2.4" stroke-linejoin="round"/><path d="M9 17L13 21L21 12" stroke="#4FBFA0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="badge-title">SOC 2 Type II</div>
+      <div class="badge-sub">Independently audited security controls</div>
+    </div>
+    <div class="badge">
+      <div class="shield">
+        <svg width="30" height="34" viewBox="0 0 30 34" fill="none"><path d="M15 2L28 7V16C28 24 22 30 15 32C8 30 2 24 2 16V7L15 2Z" stroke="#4FBFA0" stroke-width="2.4" stroke-linejoin="round"/><path d="M9 17L13 21L21 12" stroke="#4FBFA0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="badge-title">HIPAA Compliant</div>
+      <div class="badge-sub">Built to support healthcare data workflows</div>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="use-row">
+    <span class="use-tag">Legal</span>
+    <span class="use-tag">Healthcare</span>
+    <span class="use-tag">Insurance</span>
+    <span class="use-tag">Government</span>
+    <span class="use-tag">Finance</span>
+  </div>
+
+  <div class="footer">
+    <div class="logo">
+      <svg viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="1.2" width="24" height="18.8" rx="4" stroke="#ECEEF3" stroke-width="2.2"/>
+        <path d="M9.5 6.1L18.5 15.1M18.5 6.1L9.5 15.1" stroke="#F0824B" stroke-width="2.3" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">tab-<span>zero</span></span>
+    </div>
+    <div class="cta">See how it works</div>
+  </div>
+</div>
+</body></html>

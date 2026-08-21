@@ -1,0 +1,75 @@
+<!doctype html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Public+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+  *{box-sizing:border-box; margin:0; padding:0;}
+  .canvas{
+    width:1080px; height:1080px;
+    background:#1B1F2A;
+    font-family:"Public Sans",sans-serif;
+    display:flex; flex-direction:column;
+    padding:72px 80px 56px;
+    color:#ECEEF3;
+  }
+  .eyebrow{
+    font-family:"JetBrains Mono",monospace;
+    font-size:20px; letter-spacing:.08em; text-transform:uppercase;
+    color:#4FBFA0; margin-bottom:34px; font-weight:600;
+  }
+  .stat{
+    font-family:"Fraunces",serif; font-weight:700;
+    font-size:180px; line-height:1; color:#FFFFFF;
+  }
+  .stat span{color:#F0824B;}
+  p.line{
+    font-size:30px; line-height:1.5; color:#9AA3B2; max-width:760px;
+    margin-top:28px;
+  }
+  .spacer{flex:1;}
+  .tags{display:flex; gap:12px; flex-wrap:wrap; margin-bottom:40px;}
+  .tag{
+    font-family:"JetBrains Mono",monospace; font-size:18px; color:#9AA3B2;
+    border:1px solid #383F4C; padding:10px 18px; border-radius:100px;
+  }
+  .footer{
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .logo{display:flex; align-items:center; gap:12px;}
+  .logo svg{width:38px; height:30px;}
+  .logo-text{font-family:"Fraunces",serif; font-weight:700; font-size:30px; color:#ECEEF3;}
+  .logo-text span{color:#F0824B;}
+  .cta{
+    background:#F0824B; color:#1B1109;
+    font-weight:700; font-size:28px;
+    padding:20px 44px; border-radius:100px;
+  }
+</style></head>
+<body>
+<div class="canvas">
+  <div class="eyebrow">All-in-one marketing platform</div>
+  <div class="stat">500K<span>+</span></div>
+  <p class="line">entrepreneurs already run funnels, email, and courses from one free plan. No credit card required to start.</p>
+
+  <div class="spacer"></div>
+
+  <div class="tags">
+    <span class="tag">Funnels</span>
+    <span class="tag">Email</span>
+    <span class="tag">Courses</span>
+    <span class="tag">CRM</span>
+    <span class="tag">Community</span>
+    <span class="tag">+ more</span>
+  </div>
+
+  <div class="footer">
+    <div class="logo">
+      <svg viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="1.2" width="24" height="18.8" rx="4" stroke="#ECEEF3" stroke-width="2.2"/>
+        <path d="M9.5 6.1L18.5 15.1M18.5 6.1L9.5 15.1" stroke="#F0824B" stroke-width="2.3" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">tab-<span>zero</span></span>
+    </div>
+    <div class="cta">See how it works</div>
+  </div>
+</div>
+</body></html>

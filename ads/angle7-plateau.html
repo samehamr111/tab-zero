@@ -1,0 +1,44 @@
+<!doctype html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+  *{box-sizing:border-box; margin:0; padding:0;}
+  .canvas{width:1080px; height:1080px; background:#F3F4F6; font-family:"Public Sans",sans-serif; display:flex; flex-direction:column;}
+  .zone{flex:1; display:flex; flex-direction:column; justify-content:center; padding:0 96px;}
+  .zone.problem{padding-top:60px;}
+  .zone.fix{padding-bottom:60px;}
+  .eyebrow{font-family:"JetBrains Mono",monospace; font-size:16px; letter-spacing:.1em; text-transform:uppercase; margin-bottom:22px; font-weight:500;}
+  .problem .eyebrow{color:#8A9186;}
+  .fix .eyebrow{color:#B14E20;}
+  .problem h1{font-family:"Fraunces",serif; font-weight:500; font-size:58px; line-height:1.2; color:#1B1F2A; max-width:800px;}
+  .fix h2{font-family:"Fraunces",serif; font-weight:400; font-size:44px; line-height:1.28; color:#1B1F2A; max-width:760px;}
+  .rule{height:1px; background:#1B1F2A;}
+  .footer{display:flex; align-items:center; justify-content:space-between; padding:44px 96px 60px;}
+  .logo{display:flex; align-items:center; gap:12px;} .logo svg{width:34px; height:27px;}
+  .logo-text{font-family:"Fraunces",serif; font-weight:500; font-size:26px; color:#1B1F2A;} .logo-text span{color:#B14E20;}
+  .cta{display:flex; align-items:center; gap:10px; font-size:22px; font-weight:600; color:#1B1F2A; border-bottom:2px solid #B14E20; padding-bottom:4px;}
+  .cta .arrow{color:#B14E20; font-size:22px;}
+</style></head>
+<body>
+<div class="canvas">
+  <div class="zone problem">
+    <div class="eyebrow">The problem</div>
+    <h1>You've published every week for a year. Traffic hasn't moved.</h1>
+  </div>
+  <div class="rule"></div>
+  <div class="zone fix">
+    <div class="eyebrow">The fix</div>
+    <h2>Semrush shows exactly what's capping it — not another guess.</h2>
+  </div>
+  <div class="footer">
+    <div class="logo">
+      <svg viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="1.2" width="24" height="18.8" rx="4" stroke="#1B1F2A" stroke-width="1.8"/>
+        <path d="M9.5 6.1L18.5 15.1M18.5 6.1L9.5 15.1" stroke="#B14E20" stroke-width="1.9" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">tab-<span>zero</span></span>
+    </div>
+    <div class="cta">Start free trial <span class="arrow">→</span></div>
+  </div>
+</div>
+</body></html>
