@@ -1,12 +1,8 @@
 import Script from "next/script";
 
-const PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
+const PIXEL_ID = "4179145465562573";
 
-// Renders nothing until NEXT_PUBLIC_META_PIXEL_ID is set in the environment —
-// safe to deploy before the Pixel exists, activates once the env var is added.
 export function MetaPixel() {
-  if (!PIXEL_ID) return null;
-
   return (
     <>
       <Script id="meta-pixel-base" strategy="afterInteractive">
