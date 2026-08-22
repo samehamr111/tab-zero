@@ -1,6 +1,11 @@
 import Script from "next/script";
 
-const PIXEL_ID = "4179145465562573";
+// Shared pixel — same dataset as the ad account's other project (D-shirtak).
+// One pixel can serve multiple sites; AffiliateClick events carry content_name
+// per product, and the Custom Conversion in Ads Manager should scope to
+// event=AffiliateClick (optionally + URL contains tab-zero.com) to stay
+// cleanly separable from D-shirtak's own events.
+const PIXEL_ID = "1380498593515612";
 
 export function MetaPixel() {
   return (

@@ -291,6 +291,7 @@ a { color: var(--accent); }
   background: var(--accent-2-soft); color: var(--accent-2);
   padding: 12px 20px; border-radius: 9px;
 }
+.included-cta { margin-top: 24px; }
 @media (max-width: 640px) {
   .included-grid { grid-template-columns: repeat(2, 1fr); }
 }

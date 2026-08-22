@@ -164,6 +164,8 @@ export const products: Product[] = [
     fitTag: "Best for: replacing 4+ tools on a budget",
     affiliateLinkKey: "SYSTEME_IO_LIVE",
     affiliateUrl: "https://systeme.io/?sa=sa0279569415a406ae5a5dff77de0f7b65607cc19f",
+    ctaLabel: "Start My Free Plan",
+    microNoteAction: "to start your free plan — no card required",
     seo: {
       title: "Systeme.io: One Free Plan Instead of Six Tools",
       description:

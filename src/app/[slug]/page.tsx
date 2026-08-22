@@ -174,6 +174,22 @@ export default async function ProductPage({
                   ))}
                 </ul>
                 <div className="included-callout">{product.includedPlan.priceCallout}</div>
+                <div className="included-cta">
+                  <AffiliateCta
+                    className="btn btn-primary"
+                    href={product.affiliateUrl ?? "#"}
+                    external={Boolean(product.affiliateUrl)}
+                    contentName={`${product.slug}-mid`}
+                  >
+                    <span>
+                      {product.ctaLabel ?? (
+                        <>
+                          Start My <strong>Free</strong> Trial
+                        </>
+                      )}
+                    </span>
+                  </AffiliateCta>
+                </div>
               </div>
             ) : (
               product.chaosTags &&
