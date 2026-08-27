@@ -12,12 +12,14 @@ export function AffiliateCta({
   href,
   external,
   contentName,
+  pixelEvent,
   className,
   children,
 }: {
   href: string;
   external: boolean;
   contentName: string;
+  pixelEvent: string;
   className: string;
   children: ReactNode;
 }) {
@@ -27,7 +29,7 @@ export function AffiliateCta({
       href={href}
       data-affiliate-link={contentName}
       onClick={() => {
-        window.fbq?.("trackCustom", "AffiliateClick", { content_name: contentName });
+        window.fbq?.("trackCustom", pixelEvent, { content_name: contentName });
       }}
       {...(external ? { target: "_blank", rel: "sponsored noopener noreferrer" } : {})}
     >

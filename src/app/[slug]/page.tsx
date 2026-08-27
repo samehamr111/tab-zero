@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { Logo } from "@/components/Logo";
 import { SiteFooter } from "@/components/SiteFooter";
 import { AffiliateCta } from "@/components/AffiliateCta";
-import { getAllProducts, getProductBySlug } from "@/lib/products";
+import { getAllProducts, getProductBySlug, getPixelEvent } from "@/lib/products";
 
 export const dynamicParams = false;
 
@@ -94,6 +94,7 @@ export default async function ProductPage({
                   href={product.affiliateUrl ?? "#"}
                   external={Boolean(product.affiliateUrl)}
                   contentName={product.slug}
+                  pixelEvent={getPixelEvent(product)}
                 >
                   <span>
                     {product.ctaLabel ?? (
@@ -180,6 +181,7 @@ export default async function ProductPage({
                     href={product.affiliateUrl ?? "#"}
                     external={Boolean(product.affiliateUrl)}
                     contentName={`${product.slug}-mid`}
+                    pixelEvent={getPixelEvent(product)}
                   >
                     <span>
                       {product.ctaLabel ?? (
@@ -323,6 +325,7 @@ export default async function ProductPage({
               href={product.affiliateUrl ?? "#"}
               external={Boolean(product.affiliateUrl)}
               contentName={product.slug}
+              pixelEvent={getPixelEvent(product)}
             >
               <span>
                 {product.ctaLabel ?? (

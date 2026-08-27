@@ -82,79 +82,6 @@ export type Product = {
 
 export const products: Product[] = [
   {
-    slug: "funnel-builder",
-    name: "ClickFunnels",
-    category: "funnels",
-    categoryTag: "Funnel Builder",
-    cardDescription:
-      "Build a full sales funnel — pages, order bumps, upsells — without stitching together five separate tools.",
-    fitTag: "Best for: sellers building a full funnel",
-    affiliateLinkKey: "CLICKFUNNELS_LIVE",
-    affiliateUrl: "https://www.funnelhackingsecrets.com?cf_affiliate_id=4330057&affiliate_id=4330057",
-    ctaLabel: "Watch the Free Training",
-    microNoteAction: "to register for the free training",
-    seo: {
-      title: "ClickFunnels: Build a Funnel Without a Dev Team",
-      description:
-        "ClickFunnels review: build pages, order bumps, upsells, and follow-up in one funnel builder — no developer required.",
-    },
-    hero: {
-      eyebrow: "Funnel building, without the dev backlog",
-      h1: "Stop stitching five tools together just to launch one funnel.",
-      sub: "Landing page in one tool, checkout in another, email in a third, and a developer on retainer to connect them. ClickFunnels puts the page, the order bumps, the upsells, and the follow-up in one build — so a funnel that used to take a sprint takes an afternoon.",
-      trustLine: "1M+ funnels built by 100,000+ users, rated 4.8/5 from 1,643 reviews.",
-      mockTitle: "Funnel Overview",
-      stats: [
-        { k: "Funnel steps", v: "4" },
-        { k: "Conversion", v: "18.4", unit: "%", tone: "good" },
-        { k: "Order bumps", v: "2", tone: "warn" },
-      ],
-      bars: [42, 58, 50, 70, 64, 80, 76, 92],
-    },
-    problems: [
-      "Your \"funnel\" is really a page builder, a checkout tool, and an email platform, none of which talk to each other.",
-      "Every new offer means asking a developer to wire up another integration.",
-      "You don't know if an order bump or upsell would actually move revenue — there's no easy way to test it.",
-      "Launching a new offer takes days when it should take an afternoon.",
-    ],
-    chaosTags: ["Page builder", "Checkout tool", "Email platform", "Zapier glue", "Freelance developer", "Spreadsheet of link IDs"],
-    clarityLabel: "One funnel builder",
-    solutionEyebrow: "What ClickFunnels actually does",
-    solutionH2: "Page, offer, and follow-up — built as one funnel, not three tools.",
-    features: [
-      { num: "01", title: "Drag-and-drop funnel builder", body: "Build multi-step funnels from templates built for a specific goal — webinar, tripwire, membership — not blank pages you have to design from scratch." },
-      { num: "02", title: "Order bumps & upsells", body: "Add a one-click upsell or order bump without touching checkout code — the kind of revenue most single-purpose page builders can't add at all." },
-      { num: "03", title: "Built-in email & follow-up", body: "Follow-up sequences fire based on what someone actually did in the funnel, not a CSV export into a separate email tool." },
-      { num: "04", title: "Split testing", body: "Test a headline, a price point, or an entire funnel step against another — and see which one actually wins, not which one you liked more." },
-      { num: "05", title: "Funnel analytics", body: "See where people drop off step-by-step, so you know exactly which part of the funnel to fix first — not just a top-line conversion rate.", badge: "2.0" },
-    ],
-    stepsH2: "Three steps to your first live funnel",
-    steps: [
-      { title: "Pick a funnel template", body: "Start from a template built for your actual goal instead of a blank canvas." },
-      { title: "Add your offer, bump, and upsell", body: "Drop your product in, set the order bump and upsell, and connect payment — no separate checkout tool." },
-      { title: "Publish and watch the numbers", body: "Go live, then track conversion at every step so you know exactly where to improve next." },
-    ],
-    faqs: [
-      { q: "Is this just for big info-product sellers?", a: "No. Solo founders and small e-commerce sellers use it for the same reason — replacing four disconnected tools with one funnel builder." },
-      { q: "I already have a landing page tool — why switch?", a: "A landing page tool builds one page. ClickFunnels builds the whole path — page, order bump, upsell, and follow-up — as one connected sequence instead of pages you have to wire together yourself." },
-      { q: "What does it cost?", a: "Current plans and pricing are shown when you start your free trial — we'd rather send you to the source than post a number here that goes stale." },
-      { q: "What happens when I click through?", a: "You'll register for a free training that walks through how the funnel builder works before you commit to anything — it's not an immediate account signup." },
-      { q: "Do I need to know how to code?", a: "No — it's built as a drag-and-drop editor specifically so funnels don't require a developer to build or maintain." },
-      { q: "Do you actually use it, or is this just an ad?", a: "We're an independent affiliate directory — we earn a commission if you sign up through our link. We list it because it solves a specific problem well, not because it's the only option." },
-    ],
-    credibilityWall: {
-      rating: { score: "4.8", count: "1,643 reviews" },
-      press: ["Forbes", "USA Today", "Entrepreneur", "Inc. 5000", "Yahoo Finance"],
-      note: "Used by 100,000+ people to build over 1 million funnels — one of the most reviewed names in the category.",
-    },
-    finalCta: {
-      h2: "See how it works before you commit to anything.",
-      body: "Watch the free training and see exactly how the page, order bump, and follow-up come together in one build.",
-      note: "You'll be taken to register for the free training.",
-    },
-  },
-
-  {
     slug: "all-in-one-marketing",
     name: "Systeme.io",
     category: "funnels",
@@ -777,4 +704,11 @@ export function getProductBySlug(slug: string): Product | undefined {
 
 export function getCategoryLabel(key: string): string {
   return categories.find((c) => c.key === key)?.label ?? key;
+}
+
+// One Meta Pixel custom event per affiliate program (e.g. "AffiliateClick_LUMESOON"),
+// so each program's clicks can be set up as its own Custom Conversion in Ads Manager
+// instead of filtering a single shared event by content_name.
+export function getPixelEvent(product: Product): string {
+  return `AffiliateClick_${product.affiliateLinkKey.replace(/_LIVE$/, "")}`;
 }
